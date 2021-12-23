@@ -1,0 +1,76 @@
+/* escritorio (monitor grande) */
+@media only screen
+and (min-device-width: 1439px)
+{
+    .flexbox-formulario { padding-left: 30vw; }
+    .formulario-input-box { width: 30%; }
+    .boton-estilizado input { max-width: 90%; }
+
+    .solo-movil { display: none; }
+}
+
+/* escritorio (monitor mediano) */
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1440px)
+{
+    .flexbox-formulario { padding-left: 22vw; }
+    .formulario-input-box { width: 36%; }
+    .boton-estilizado input { max-width: 86%; }
+
+    .solo-movil { display: none; }
+}
+
+/* escritorio resolucion regular (768p a 1024p) */
+@media only screen
+and (min-device-width: 769px)
+and (max-device-width: 1023px)
+{
+    .flexbow-formulario { padding-left: 10vw; }
+    .formulario-input-box { width: 50%; }
+
+    .logo-footer .logo { max-width: 75%; }
+
+    .solo-escritorio { display: none; }
+}
+
+/* tablets */
+@media only screen
+and (min-device-width: 475px)
+and (max-device-width: 768px)
+{
+    .flexbox-formulario { padding-left: 74px; }
+    .formulario-input-box { width: 366px; }
+
+    .logo-footer .logo { max-width: 55%; }
+    .flexbox-footer { flex-flow: column; }
+
+    .main-navbar { display: none; }
+    .solo-escritorio { display: none; }
+}
+
+/* celulares */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 476px)
+{
+    .flexbox-formulario { padding-left: 12px; }
+    .formulario-input-box { width: 80%; }
+
+    .logo-footer .logo { max-width: 55%; }
+    .flexbox-footer { flex-flow: column; }
+
+    .main-navbar { display: none; }
+    .solo-escritorio { display: none; }
+
+    .header-main-top .logo
+    {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 18px;
+    }
+    .header-main-top { flex-flow: row wrap; }
+    .boton-estilizado input { max-width: 80%; }
+    .boton-estilizado { max-width: 40%; }
+}
+
